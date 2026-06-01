@@ -1,0 +1,68 @@
+---
+layout: default
+---
+
+<main class="lab-home">
+  <section class="identity-panel">
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}">
+        <span class="monogram">E<br>C<br>L</span>
+        <span class="brand-name">Experimental<br>Criticism Lab</span>
+      </a>
+
+      <nav class="top-nav">
+        {% for item in site.nav %}
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endfor %}
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Experimental<br>Criticism Lab</h1>
+
+      <p class="subtitle">
+        A humanities research lab for literature, media, AI, and critical interpretation.
+      </p>
+
+      <div class="tags">
+        <span>AI + Humanities</span>
+        <span>World Literature</span>
+        <span>Machine Reading</span>
+        <span>Critical Theory</span>
+      </div>
+
+      <p class="affiliation">Comparative Literature, Binghamton University</p>
+
+      <div class="summary">
+        <p>Collaborative research on literature, media, translation, and computation.</p>
+        <p>Current focus: AI, machine reading, and world literature.</p>
+      </div>
+
+      <div class="home-buttons">
+        <a href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a href="{{ '/people/' | relative_url }}">People</a>
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </div>
+    </section>
+  </section>
+
+  <section class="json-panel" aria-label="Lab manifesto in JSON format">
+<pre><code>{
+  "name": "Experimental Criticism Lab",
+  "base": "Comparative Literature, Binghamton University",
+  "focus": [
+    "AI and machine reading",
+    "world literature",
+    "translation",
+    "media and criticism"
+  ],
+  "questions": [
+    "What can computational systems understand about literature?",
+    "How do media technologies reshape reading and interpretation?",
+    "What forms of criticism are needed in data-driven culture?"
+  ],
+  "current_project": "AI, Machine Reading, and World Literature",
+  "contact": "experimentalcriticism@binghamton.edu"
+}<span class="cursor"></span></code></pre>
+  </section>
+</main>

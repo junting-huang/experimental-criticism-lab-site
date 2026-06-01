@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<header class="page-header">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="monogram">E<br>C<br>L</span>
+    <span class="brand-name">Experimental<br>Criticism Lab</span>
+  </a>
+
+  <nav class="top-nav">
+    {% for item in site.nav %}
+      <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+    {% endfor %}
+  </nav>
+</header>
+
+<main class="page-content">
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</main>
