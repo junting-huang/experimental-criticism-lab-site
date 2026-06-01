@@ -3,8 +3,6 @@ description: A humanities research lab for literature, media, AI, and critical i
 url: "https://junting-huang.github.io"
 baseurl: "/experimental-criticism-lab-site"
 
-theme: hacked-jekyll
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
