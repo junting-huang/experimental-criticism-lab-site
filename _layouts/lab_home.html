@@ -31,38 +31,61 @@ layout: default
         <span>Critical Theory</span>
       </div>
 
-      <p class="affiliation">Comparative Literature, Binghamton University</p>
+      <p class="affiliation">
+        {% include icon.html name="landmark" class="icon meta-icon" %}
+        <span>Comparative Literature, Binghamton University</span>
+      </p>
 
       <div class="summary">
-        <p>Collaborative research on literature, media, translation, and computation.</p>
-        <p>Current focus: AI, machine reading, and world literature.</p>
+        <p>
+          {% include icon.html name="users-round" class="icon meta-icon" %}
+          <span>Collaborative research on literature, media, translation, and computation.</span>
+        </p>
+        <p>
+          {% include icon.html name="circle-dot" class="icon meta-icon" %}
+          <span>Current focus: AI, machine reading, and world literature.</span>
+        </p>
       </div>
 
       <div class="home-buttons">
-        <a href="{{ '/projects/' | relative_url }}">Projects</a>
-        <a href="{{ '/people/' | relative_url }}">People</a>
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        <a href="{{ '/projects/' | relative_url }}">
+          {% include icon.html name="folder" class="icon button-icon" %}
+          <span>Projects</span>
+        </a>
+        <a href="{{ '/people/' | relative_url }}">
+          {% include icon.html name="user-round" class="icon button-icon" %}
+          <span>People</span>
+        </a>
+        <a href="{{ '/contact/' | relative_url }}">
+          {% include icon.html name="mail" class="icon button-icon" %}
+          <span>Contact</span>
+        </a>
       </div>
     </section>
   </section>
 
   <section class="json-panel" aria-label="Lab manifesto in JSON format">
-<pre><code>{
-  "name": "Experimental Criticism Lab",
-  "base": "Comparative Literature, Binghamton University",
-  "focus": [
-    "AI and machine reading",
-    "world literature",
-    "translation",
-    "media and criticism"
-  ],
-  "questions": [
-    "What can computational systems understand about literature?",
-    "How do media technologies reshape reading and interpretation?",
-    "What forms of criticism are needed in data-driven culture?"
-  ],
-  "current_project": "AI, Machine Reading, and World Literature",
-  "contact": "experimentalcriticism@binghamton.edu"
-}<span class="cursor"></span></code></pre>
+<pre><code><span class="punct">{</span>
+  <span class="punct">"</span><span class="key">name</span><span class="punct">": "</span><span class="value">Experimental Criticism Lab</span><span class="punct">",</span>
+  <span class="punct">"</span><span class="key">description</span><span class="punct">": "</span><span class="value">A humanities research lab for literature, media, AI, and critical interpretation</span><span class="punct">",</span>
+  <span class="punct">"</span><span class="key">base</span><span class="punct">": "</span><span class="value">Comparative Literature, Binghamton University</span><span class="punct">",</span>
+  <span class="punct">"</span><span class="key">focus</span><span class="punct">": [</span>
+    <span class="punct">"</span><span class="value">AI and machine reading</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">world literature</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">translation</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">media and criticism</span><span class="punct">"</span>
+  <span class="punct">],</span>
+  <span class="punct">"</span><span class="key">questions</span><span class="punct">": [</span>
+    <span class="punct">"</span><span class="value"><span id="typed-question"></span></span><span class="punct">"</span>
+  <span class="punct">],</span>
+  <span class="punct">"</span><span class="key">current_project</span><span class="punct">": "</span><span class="value">AI, Machine Reading, and World Literature</span><span class="punct">",</span>
+  <span class="punct">"</span><span class="key">contact</span><span class="punct">": "</span><span class="value">experimentalcriticism@binghamton.edu</span><span class="punct">"</span>
+<span class="punct">}</span></code></pre>
+
+    <div id="strings" hidden>
+      <span>What can computational systems understand about literature?</span>
+      <span>How do media technologies reshape reading and interpretation?</span>
+      <span>What forms of criticism are needed in data-driven culture?</span>
+    </div>
   </section>
 </main>
