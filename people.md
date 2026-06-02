@@ -6,20 +6,22 @@ permalink: /people/
 
 ## Director
 
-[Name], [title], Department of Comparative Literature, Binghamton University.
+The lab is directed from the Department of Comparative Literature at Binghamton University.
 
-[One or two sentences on research interests connecting to the lab's work.]
+Director details and research areas will be updated as the lab’s projects develop.
 
 ## Affiliated Faculty
 
-The lab works with colleagues across Binghamton, including faculty affiliated with [DIDA and related programs], as well as artists, technologists, and translators.
+The lab works with colleagues across Binghamton, including faculty affiliated with DIDA and related programs, as well as artists, technologists, and translators.
 
-[List as confirmed.]
+Affiliated faculty will be listed as participation is confirmed.
 
 ## Research Fellows
 
-[Populated as students take on formal roles—see Join.]
+Research fellows and associates will be listed as students take on formal roles through sustained participation in lab projects.
 
 ## Advisory Board
 
-Dennis Tenen, Columbia University — founder of the Narrative Intelligence Lab and the journal Lab/Notes. [Additional members as confirmed.]
+Dennis Tenen, Columbia University — founder of the Narrative Intelligence Lab and the journal Lab/Notes.
+
+Additional advisory board members will be announced as confirmed.
