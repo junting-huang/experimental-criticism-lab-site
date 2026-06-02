@@ -285,6 +285,18 @@ a:active {
   text-transform: none;
 }
 
+.page-content h2 {
+  border-top: 1px solid var(--surface-line);
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.page-content h1 + h2 {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
 .page-content p,
 .page-content ul,
 .page-content ol {
@@ -292,6 +304,137 @@ a:active {
 }
 
 .page-content a {
+  color: var(--surface-accent);
+}
+
+.project-feature {
+  border: 1px solid var(--surface-line);
+  border-radius: 4px;
+  padding: 1.5rem;
+}
+
+.project-label {
+  color: var(--surface-accent);
+  font-size: 0.82rem;
+  margin: 0 0 0.5rem;
+}
+
+.project-feature h2 {
+  border-top: 0;
+  margin: 0 0 1.5rem;
+  padding-top: 0;
+}
+
+.project-body p {
+  margin: 0;
+}
+
+.project-body p + p {
+  margin-top: 1rem;
+}
+
+.project-note {
+  border-left: 2px solid var(--surface-accent);
+  color: var(--surface-muted);
+  margin: 1.5rem 0;
+  padding-left: 1rem;
+}
+
+.project-note p {
+  margin: 0;
+}
+
+.method-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.method-list span {
+  border: 1px solid var(--surface-line);
+  border-radius: 4px;
+  color: var(--surface-accent);
+  font-size: 0.82rem;
+  padding: 0.35rem 0.55rem;
+}
+
+.event-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.event-item {
+  border: 1px solid var(--surface-line);
+  border-radius: 4px;
+  padding: 1.1rem 1.2rem;
+}
+
+.event-item h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.event-item p {
+  margin: 0;
+}
+
+.event-item p + p {
+  margin-top: 0.75rem;
+}
+
+.event-type,
+.event-meta {
+  color: var(--surface-accent);
+  font-size: 0.82rem;
+}
+
+.event-type {
+  margin-bottom: 0.45rem;
+}
+
+.event-item-empty {
+  color: var(--surface-muted);
+}
+
+.site-footer {
+  border-top: 1px solid var(--surface-line);
+  color: var(--surface-muted);
+  margin-top: 5rem;
+  padding: 2rem 2rem 2.5rem;
+  font-size: 0.82rem;
+}
+
+.footer-inner {
+  max-width: 820px;
+  margin: 0 auto;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.footer-identity {
+  margin-bottom: 1.5rem;
+}
+
+.footer-title {
+  color: var(--surface-ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.site-footer a {
   color: var(--surface-accent);
 }
 

@@ -19,3 +19,32 @@ layout: default
   <h1>{{ page.title }}</h1>
   {{ content }}
 </main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-identity">
+      <p class="footer-title">Experimental Criticism Lab</p>
+      <p>Comparative Literature, Binghamton University</p>
+      <p>A humanities research lab for literature, media, and critical interpretation.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ '/people/' | relative_url }}">People</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ '/events/' | relative_url }}">Events</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ '/outputs/' | relative_url }}">Outputs</a>
+      <span aria-hidden="true">·</span>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+    </nav>
+
+    <p>
+      <a href="mailto:experimentalcriticism@binghamton.edu">experimentalcriticism@binghamton.edu</a>
+    </p>
+    <p>&copy; 2026 Experimental Criticism Lab</p>
+  </div>
+</footer>
