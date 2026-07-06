@@ -4,27 +4,80 @@ title: Projects
 permalink: /projects/
 ---
 
+The lab supports projects at every stage: early research questions, seminar papers, conference presentations, grant proposals, articles, and public-facing work. Student-led projects may develop through lab participation, independent study, research fellowships, or other forms of sustained collaboration.
+
 <article class="project-feature">
-  <p class="project-label">Inaugural Project</p>
-  <h2>AI, Machine Reading, and World Literature</h2>
+  <h2>Context Engineering and Literary Interpretation</h2>
 
-  <div class="project-body">
-    <p>The lab's inaugural project asks what happens to world literature when it is read by machines. As large language models and other computational systems are increasingly used to translate, summarize, classify, and generate text, we examine what these systems can and cannot grasp about literary worlds—their social relations, languages, styles, voices, and historical textures.</p>
-
-    <p>The project pairs close reading and critical theory with hands-on computational work. We test models against literary texts, study where machine reading succeeds and where it fails, and ask what those failures reveal about both the technology and the assumptions embedded in our own interpretive practices. The aim is neither to celebrate nor to dismiss computational reading, but to study it critically and experimentally—as an object of analysis and a method in its own right.</p>
+  <div class="method-list" aria-label="Project tags">
+    <span>faculty-led</span>
+    <span>generative AI</span>
+    <span>RAG</span>
+    <span>pedagogy</span>
   </div>
 
-  <aside class="project-note">
-    <p>Supported by a provost's grant, the project runs through regular working meetings devoted to research, writing, and development, with several deadlines on the near horizon, including external grant applications and a special-issue proposal.</p>
-  </aside>
+  <div class="project-body">
+    <p>How do generative AI systems read literature when their outputs are shaped by prompts, retrieved passages, and curated corpora? Rather than evaluating these systems by factual accuracy alone, we ask how they select evidence, track narrative context, handle ambiguity, attribute speech and thought, and model the social knowledge central to literary interpretation. The project includes RAG-based experiments, benchmark design, classroom integration, and responsible guidelines for AI use in humanities education.</p>
+  </div>
+</article>
 
-  <div class="method-list" aria-label="Project methods">
-    <span>close reading</span>
-    <span>critical theory</span>
-    <span>media analysis</span>
-    <span>translation studies</span>
-    <span>digital methods</span>
-    <span>collaborative writing</span>
-    <span>public-facing research</span>
+<article class="project-feature">
+  <h2>AI, Embodiment, and Disability Aesthetics</h2>
+
+  <div class="method-list" aria-label="Project tags">
+    <span>faculty-led</span>
+    <span>AI video</span>
+    <span>disability studies</span>
+    <span>media aesthetics</span>
+  </div>
+
+  <div class="project-body">
+    <p>This strand examines AI-generated images and video through disability studies, media theory, and aesthetics. It asks how generative systems model bodily movement, how they stabilize or suppress bodily variation, and how visual glitches expose the cultural and technical production of the "normal" body. Treating instability, distortion, and failed coordination as more than mere errors, the project explores what disability critique can teach us about AI, embodiment, perception, and post-AI visual culture.</p>
+  </div>
+</article>
+
+<article class="project-feature">
+  <h2>Chinese Poetics and Language Models</h2>
+
+  <div class="method-list" aria-label="Project tags">
+    <span>faculty-led</span>
+    <span>Chinese literature</span>
+    <span>tokenization</span>
+    <span>AI safety</span>
+  </div>
+
+  <div class="project-body">
+    <p>Chinese writing and poetics offer critical resources for understanding language models. This strand takes up tokenization, script, poetic compression, homophony, visual decomposition, classical language, and adversarial prompting. Beyond asking whether AI can understand Chinese literature, it asks what Chinese literary and linguistic practices reveal about the cultural techniques through which language becomes computable.</p>
+  </div>
+</article>
+
+<article class="project-feature">
+  <h2>AI Translation and Premodern Literary Contexts</h2>
+
+  <div class="method-list" aria-label="Project tags">
+    <span>student-led</span>
+    <span>Arabic literature</span>
+    <span>thick translation</span>
+    <span>cultural context</span>
+  </div>
+
+  <div class="project-body">
+    <p>This research strand investigates how large language models process, interpret, and translate Arabic literary texts across historical and cultural distance. Focusing on premodern prose, including al-Jāḥiẓ's writings, it asks how AI-assisted translation handles Arab-Islamic contexts, concepts of Blackness, archaic vocabulary, proper names, authorship, and rhetorical forms such as metaphor, simile, and sajʿ, or rhymed prose. More broadly, the project examines whether computational systems can account for texts whose political, ethical, and literary density resists simple transfer between languages.</p>
+  </div>
+</article>
+
+<article class="project-feature">
+  <h2>Analog-Digital Media Archaeology</h2>
+
+  <div class="method-list" aria-label="Project tags">
+    <span>student-led</span>
+    <span>media archaeology</span>
+    <span>video games</span>
+    <span>film theory</span>
+    <span>digital media</span>
+  </div>
+
+  <div class="project-body">
+    <p>This strand studies the historical convergence of film, video games, and digital media—full-motion video games, "video game logic" films, analog media, and the early digital turn—as sites where older and newer forms overlap, haunt, and transform one another. Returning to obsolete and transitional media, the project asks how experiments in interactivity, spectatorship, memory, and technological failure illuminate the unfinished history of digital culture.</p>
   </div>
 </article>

@@ -4,7 +4,7 @@ layout: default
 
 <header class="page-header">
   <a class="brand" href="{{ '/' | relative_url }}">
-    <span class="monogram">E<br>C<br>L</span>
+    <span class="monogram">[ECL}</span>
     <span class="brand-name">Experimental<br>Criticism Lab</span>
   </a>
 
@@ -15,7 +15,7 @@ layout: default
   </nav>
 </header>
 
-<main class="page-content">
+<main class="page-content{% if page.page_class %} {{ page.page_class }}{% endif %}">
   <h1>{{ page.title }}</h1>
   {{ content }}
 </main>
@@ -42,9 +42,6 @@ layout: default
       <a href="{{ '/contact/' | relative_url }}">Contact</a>
     </nav>
 
-    <p>
-      <a href="mailto:experimentalcriticism@binghamton.edu">experimentalcriticism@binghamton.edu</a>
-    </p>
     <p>&copy; 2026 Experimental Criticism Lab</p>
   </div>
 </footer>
