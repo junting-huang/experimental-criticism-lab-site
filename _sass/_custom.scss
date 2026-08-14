@@ -667,6 +667,23 @@ a:active {
   padding: 1.5rem clamp(1.5rem, 4vw, 3rem) 1rem;
 }
 
+.site-header,
+.page-header {
+  border-bottom: 0;
+  position: relative;
+}
+
+.site-header::after,
+.page-header::after {
+  background: rgba(47, 81, 56, 0.32);
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: clamp(1.5rem, 4vw, 3rem);
+  position: absolute;
+  right: clamp(1.5rem, 4vw, 3rem);
+}
+
 .about-header .brand {
   gap: 1rem;
 }
