@@ -3,60 +3,42 @@ layout: default
 ---
 
 <main class="lab-home">
-  <section class="identity-panel">
-    <header class="site-header">
-      <a class="brand" href="{{ '/' | relative_url }}">
-        <span class="monogram">[ECL}</span>
-        <span class="brand-name">Experimental<br>Criticism Lab</span>
-      </a>
+  {% include site-header.html class="site-header about-header" %}
 
-      <nav class="top-nav">
-        {% for item in site.nav %}
-          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endfor %}
-      </nav>
-    </header>
+  <div class="home-grid">
+    <section class="identity-panel">
 
     <section class="hero">
       <h1>Experimental<br>Criticism Lab</h1>
 
       <p class="subtitle">
-        A humanities research lab for literature, media, and critical interpretation. [Draft]
+        A humanities research lab for literature, media, and critical interpretation.
       </p>
 
-      <div class="summary">
-        <p>
-          {% include icon.html name="landmark" class="icon meta-icon" %}
-          <span>Comparative Literature, Binghamton University</span>
-        </p>
-        <p>
-          {% include icon.html name="circle-dot" class="icon meta-icon" %}
-          <span class="focus-line">
-            <span class="focus-label">Current Work</span>
-            <span class="focus-threads">
-              <span>machine reading</span>
-              <span>world literature</span>
-              <span>AI &amp; criticism</span>
-              <span>media theory</span>
-              <span>critical theory</span>
-              <span>computational methods</span>
-            </span>
-          </span>
-        </p>
+      <div class="hero-meta">
+        <span class="short-rule" aria-hidden="true"></span>
+        <p>Comparative Literature, Binghamton University (SUNY)</p>
+      </div>
+
+      <div class="research-areas" aria-label="Research areas">
+        <p>Research Areas</p>
+        <div class="focus-threads">
+          <span>machine reading</span>
+          <span>world literature</span>
+          <span>AI &amp; criticism</span>
+          <span>media theory</span>
+          <span>translation</span>
+          <span>computational methods</span>
+        </div>
       </div>
 
       <div class="home-buttons">
-        <a href="{{ '/projects/' | relative_url }}">
-          {% include icon.html name="folder" class="icon button-icon" %}
-          <span>Projects</span>
+        <a class="primary-action" href="{{ '/projects/' | relative_url }}">
+          <span>Explore Projects</span>
+          {% include icon.html name="arrow-right" class="icon button-arrow" %}
         </a>
-        <a href="{{ '/people/' | relative_url }}">
-          {% include icon.html name="user-round" class="icon button-icon" %}
-          <span>People</span>
-        </a>
-        <a href="{{ '/contact/' | relative_url }}">
-          {% include icon.html name="mail" class="icon button-icon" %}
-          <span>Contact</span>
+        <a class="secondary-action" href="{{ '/contact/' | relative_url }}">
+          <span>Get Involved</span>
         </a>
       </div>
     </section>
@@ -78,8 +60,11 @@ layout: default
     <span class="punct">"</span><span class="value"><span id="typed-question"></span></span><span class="punct">"</span>
   <span class="punct">],</span>
   <span class="punct">"</span><span class="key">methods</span><span class="punct">": [</span>
-    <span class="punct">"</span><span class="value">read()</span><span class="punct">", "</span><span class="value">compare()</span><span class="punct">", "</span><span class="value">translate()</span><span class="punct">",</span>
-    <span class="punct">"</span><span class="value">model()</span><span class="punct">", "</span><span class="value">critique()</span><span class="punct">"</span>
+    <span class="punct">"</span><span class="value">read()</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">compare()</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">translate()</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">model()</span><span class="punct">",</span>
+    <span class="punct">"</span><span class="value">critique()</span><span class="punct">"</span>
   <span class="punct">]</span>
 <span class="punct">}</span></code></pre>
 
@@ -93,4 +78,116 @@ layout: default
       <span>How does reading change across language, scale, and medium?</span>
     </div>
   </section>
+  </div>
+
+  <section class="home-section research-section" aria-labelledby="current-research-title">
+    <div class="section-heading">
+      <h2 id="current-research-title">Current Research</h2>
+      <span class="section-rule" aria-hidden="true"></span>
+      <a class="section-link" href="{{ '/projects/' | relative_url }}">
+        <span>View all projects</span>
+        {% include icon.html name="arrow-right" class="icon inline-arrow" %}
+      </a>
+    </div>
+
+    <div class="research-grid">
+      <article class="research-card">
+        <div class="card-icon">{% include icon.html name="book-open" class="icon card-icon-svg" %}</div>
+        <h3>Context Engineering and Literary Interpretation</h3>
+        <p>Exploring how prompts, retrieved passages, and curated corpora shape interpretive outcomes across literary texts.</p>
+      </article>
+
+      <article class="research-card">
+        <div class="card-icon">{% include icon.html name="accessibility" class="icon card-icon-svg" %}</div>
+        <h3>AI, Embodiment, and Disability Aesthetics</h3>
+        <p>Investigating how generative systems model bodily movement, variation, instability, and post-AI visual culture.</p>
+      </article>
+
+      <article class="research-card">
+        <div class="card-icon">{% include icon.html name="languages" class="icon card-icon-svg" %}</div>
+        <h3>Chinese Poetics and Language Models</h3>
+        <p>Reading Chinese writing, poetics, tokenization, and classical language through the lens of language models.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section home-lower-grid" aria-label="Lab updates and participation">
+    <section class="latest-panel" aria-labelledby="latest-title">
+      <div class="section-heading compact-heading">
+        <h2 id="latest-title">Latest from the Lab</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+        <a class="section-link" href="{{ '/events/' | relative_url }}">
+          <span>View all</span>
+          {% include icon.html name="arrow-right" class="icon inline-arrow" %}
+        </a>
+      </div>
+
+      <div class="latest-list">
+        <article class="latest-item">
+          <div class="latest-icon" aria-hidden="true">
+            <span>TBA</span>
+          </div>
+          <div>
+            <p class="item-kicker">Upcoming Event</p>
+            <h3>Fall Information Session</h3>
+            <p>An introduction to the Experimental Criticism Lab, its current projects, and ways to participate.</p>
+            <p class="item-meta">Date TBA · Location TBA</p>
+          </div>
+        </article>
+
+        <article class="latest-item">
+          <div class="latest-icon" aria-hidden="true">
+            {% include icon.html name="newspaper" class="icon latest-icon-svg" %}
+          </div>
+          <div>
+            <p class="item-kicker">Recent Publication</p>
+            <h3>“Five Red Apples and a RAG System”</h3>
+            <p>Junting Huang, with Teddy Roland. <em>MFS: Modern Fiction Studies</em>, forthcoming.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="work-panel" aria-labelledby="work-title">
+      <div class="section-heading compact-heading">
+        <h2 id="work-title">Work with Us</h2>
+        <span class="section-rule" aria-hidden="true"></span>
+      </div>
+
+      <p class="work-intro">The lab welcomes students, researchers, and collaborators who are curious about the future of reading and criticism.</p>
+
+      <div class="work-list">
+        <article>
+          {% include icon.html name="users-round" class="icon work-icon" %}
+          <div>
+            <h3>Join Working Meetings</h3>
+            <p>Participate in shared reading, project development, collaborative research, and writing.</p>
+          </div>
+        </article>
+
+        <article>
+          {% include icon.html name="folder" class="icon work-icon" %}
+          <div>
+            <h3>Contribute to Projects</h3>
+            <p>Develop research through lab participation, independent study, fellowships, or sustained collaboration.</p>
+          </div>
+        </article>
+
+        <article>
+          {% include icon.html name="newspaper" class="icon work-icon" %}
+          <div>
+            <h3>Build Public Outputs</h3>
+            <p>Move research toward publications, presentations, exhibitions, and public-facing formats.</p>
+          </div>
+        </article>
+      </div>
+
+      <a class="wide-link" href="{{ '/contact/' | relative_url }}">
+        <span>Learn more about opportunities to get involved</span>
+        {% include icon.html name="arrow-right" class="icon inline-arrow" %}
+      </a>
+    </section>
+  </section>
 </main>
+
+{% include site-footer.html %}

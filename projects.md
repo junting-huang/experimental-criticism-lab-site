@@ -1,12 +1,12 @@
 ---
-layout: page
+layout: projects
 title: Projects
 permalink: /projects/
 ---
 
-The lab supports projects at every stage: early research questions, seminar papers, conference presentations, grant proposals, articles, and public-facing work. Student-led projects may develop through lab participation, independent study, research fellowships, or other forms of sustained collaboration.
+The Experimental Criticism Lab supports collaborative, project-based work across literature, media, translation, and criticism.
 
-<article class="project-feature">
+<article class="project-feature" data-kind="faculty-led">
   <h2>Context Engineering and Literary Interpretation</h2>
 
   <div class="method-list" aria-label="Project tags">
@@ -21,7 +21,7 @@ The lab supports projects at every stage: early research questions, seminar pape
   </div>
 </article>
 
-<article class="project-feature">
+<article class="project-feature" data-kind="faculty-led">
   <h2>AI, Embodiment, and Disability Aesthetics</h2>
 
   <div class="method-list" aria-label="Project tags">
@@ -36,7 +36,7 @@ The lab supports projects at every stage: early research questions, seminar pape
   </div>
 </article>
 
-<article class="project-feature">
+<article class="project-feature" data-kind="faculty-led">
   <h2>Chinese Poetics and Language Models</h2>
 
   <div class="method-list" aria-label="Project tags">
@@ -51,7 +51,7 @@ The lab supports projects at every stage: early research questions, seminar pape
   </div>
 </article>
 
-<article class="project-feature">
+<article class="project-feature" data-kind="student-led">
   <h2>AI Translation and Premodern Literary Contexts</h2>
 
   <div class="method-list" aria-label="Project tags">
@@ -66,7 +66,7 @@ The lab supports projects at every stage: early research questions, seminar pape
   </div>
 </article>
 
-<article class="project-feature">
+<article class="project-feature" data-kind="student-led">
   <h2>Analog-Digital Media Archaeology</h2>
 
   <div class="method-list" aria-label="Project tags">
