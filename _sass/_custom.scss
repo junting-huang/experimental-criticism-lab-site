@@ -114,9 +114,9 @@ a:active {
 .monogram {
   color: var(--surface-accent);
   font-family: Georgia, serif;
-  line-height: 1;
   font-size: 1.75rem;
   letter-spacing: 0.02em;
+  line-height: 1;
 }
 
 .top-nav {
@@ -229,7 +229,7 @@ a:active {
 .hero-meta {
   color: var(--surface-ink);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.86rem;
+  font-size: 0.92rem;
   line-height: 1.35;
   margin-top: 1.35rem;
 }
@@ -664,7 +664,7 @@ a:active {
 
 .about-header {
   border-bottom: 0;
-  padding: 1.5rem clamp(1.5rem, 4vw, 3rem) 1rem;
+  padding: 1.5rem clamp(1.5rem, 4vw, 3rem) 0.75rem;
 }
 
 .site-header,
@@ -685,23 +685,40 @@ a:active {
 }
 
 .about-header .brand {
-  gap: 1rem;
+  gap: 0.55rem;
 }
 
 .about-header .monogram {
   font-size: 2.05rem;
 }
 
+.brand-divider {
+  align-self: center;
+  background: var(--surface-accent);
+  display: block;
+  height: 1.25rem;
+  width: 1px;
+}
+
 .brand-name {
   color: var(--surface-ink);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.92rem;
-  line-height: 1.1;
+  font-family: var(--font-sans);
+  font-size: 0.54rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1.42;
+  text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .about-header .top-nav {
   font-size: 0.9rem;
   gap: clamp(1rem, 2.7vw, 2.5rem);
+}
+
+.site-header.about-header,
+.page-header.about-header {
+  padding-bottom: 0.75rem;
 }
 
 .about-page {
@@ -1103,20 +1120,22 @@ a:active {
 .events-page .event-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.45rem;
-  margin-top: 0.9rem;
+  gap: 0.55rem 0.85rem;
+  margin-top: 0.95rem;
 }
 
 .events-page .event-tags span {
-  border: 1px solid #8da292;
+  border: 1px solid var(--surface-accent);
+  border-radius: 4px;
   color: var(--surface-accent);
-  font-family: "hack", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
-  font-size: 0.62rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  line-height: 1.2;
-  padding: 0.32rem 0.55rem;
-  text-transform: uppercase;
+  line-height: 1.15;
+  min-width: 4.6rem;
+  padding: 0.34rem 0.7rem;
+  text-align: center;
 }
 
 .events-page + .site-footer {
@@ -1201,28 +1220,42 @@ a:active {
 
 .outputs-index .output-entry {
   align-items: start;
-  column-gap: 1.2rem;
+  column-gap: 1.25rem;
   display: grid;
-  grid-template-columns: 7rem 7rem minmax(0, 1fr);
+  grid-template-columns: 9rem 1fr;
 }
 
-.outputs-index .output-year,
+.outputs-index .output-year {
+  color: var(--surface-accent) !important;
+  font-family: "hack", ui-monospace, "SF Mono", Menlo, Consolas, monospace !important;
+  font-size: 0.68rem !important;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.45 !important;
+  margin: 0 !important;
+  max-width: 8rem;
+  text-transform: uppercase;
+}
+
+.outputs-index .output-content {
+  grid-column: 2;
+  min-width: 0;
+}
+
 .outputs-index .output-type {
   color: var(--surface-accent) !important;
   font-family: "hack", ui-monospace, "SF Mono", Menlo, Consolas, monospace !important;
   font-size: 0.68rem !important;
   font-weight: 700;
   letter-spacing: 0.08em;
-  line-height: 1.35 !important;
-  margin: 0 !important;
+  line-height: 1.2 !important;
+  margin: 0 0 0.45rem !important;
   text-transform: uppercase;
 }
 
-.outputs-index .output-content {
-  min-width: 0;
-}
-
 .outputs-index .output-content h3 {
+  font-size: 1.42rem;
+  line-height: 1.18;
   margin-bottom: 0.35rem;
 }
 
@@ -1245,7 +1278,6 @@ a:active {
 
 .contact-page {
   color: var(--surface-ink);
-  counter-reset: contact-section;
   margin: 2.2rem 0 0 clamp(1.5rem, 5.2vw, 3rem);
   max-width: 53rem;
   padding-right: 2rem;
@@ -1280,7 +1312,6 @@ a:active {
 
 .contact-section h2 {
   color: var(--surface-accent);
-  counter-increment: contact-section;
   font-family: "hack", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
   font-size: 0.68rem;
   font-weight: 700;
@@ -1291,7 +1322,7 @@ a:active {
 }
 
 .contact-section h2::before {
-  content: counter(contact-section, decimal-leading-zero) " // ";
+  content: attr(data-index) " // ";
 }
 
 .contact-copy {
@@ -1623,6 +1654,7 @@ a:active {
 .site-footer {
   border-top: 1px solid var(--surface-line);
   color: var(--surface-muted);
+  font-family: Georgia, "Times New Roman", serif;
   margin-top: 5rem;
   padding: 2rem 2rem 2.5rem;
   font-size: 0.82rem;
@@ -1649,15 +1681,24 @@ a:active {
   font-size: 1rem;
 }
 
+.footer-description {
+  font-style: italic;
+}
+
 .footer-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.35rem;
-  margin-bottom: 0.75rem;
+  margin: 0.72rem 0 0.55rem;
+  position: relative;
 }
 
 .site-footer a {
+  color: var(--surface-accent);
+}
+
+.footer-nav span {
   color: var(--surface-accent);
 }
 
@@ -1756,9 +1797,9 @@ a:active {
 
 .interior-page.events-page > h2:not(:first-of-type),
 .interior-page.outputs-index > h2:not(:first-of-type) {
-  border-top: 1px solid var(--surface-accent);
+  border-top: 0;
   margin-top: 1.35rem;
-  padding-top: 1.35rem;
+  padding-top: 0;
 }
 
 .interior-page .about-pullquote,
@@ -1800,37 +1841,48 @@ a:active {
 .interior-page.outputs-index .output-entry {
   align-items: start;
   display: grid;
-  grid-template-columns: 7rem 7rem minmax(0, 1fr);
+  grid-template-columns: 9rem 1fr;
 }
 
 .interior-page.outputs-index .output-entry p {
   max-width: none;
 }
 
-.interior-page.outputs-index .output-year,
+.interior-page.outputs-index .output-year {
+  color: var(--surface-accent);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+  max-width: 8rem;
+  text-transform: uppercase;
+}
+
 .interior-page.outputs-index .output-type {
   color: var(--surface-accent);
   font-family: var(--font-mono);
   font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  line-height: 1.35;
+  line-height: 1.2;
+  margin: 0 0 0.45rem;
   text-transform: uppercase;
 }
 
 .interior-page.outputs-index .output-content h3 {
   color: var(--surface-ink);
   font-family: var(--font-serif);
-  font-size: 1.18rem;
+  font-size: 1.42rem;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 1.18;
   margin: 0 0 0.35rem;
 }
 
 .interior-page.outputs-index .output-author,
 .interior-page.outputs-index .output-biblio {
-  font-size: 0.86rem;
-  line-height: 1.42;
+  font-size: 0.9rem;
+  line-height: 1.45;
 }
 
 .interior-page.outputs-index .output-author {
@@ -1844,20 +1896,13 @@ a:active {
 }
 
 .interior-page.people-page .person-entry {
-  border-left: 0;
-  min-height: 4.35rem;
+  border-left: 2px solid var(--surface-accent);
+  min-height: 0;
   padding-left: 2.2rem;
-  position: relative;
 }
 
 .interior-page.people-page .person-entry::before {
-  background: var(--surface-accent);
-  content: "";
-  height: 4.2rem;
-  left: 0;
-  position: absolute;
-  top: 0.15rem;
-  width: 2px;
+  content: none;
 }
 
 .interior-page.people-page .person-role {
@@ -1907,6 +1952,8 @@ a:active {
   border-color: var(--surface-accent);
   font-family: var(--font-mono);
   font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .interior-page.events-page .event-notice {
@@ -2200,11 +2247,17 @@ a:active {
   .events-page .event-item .event-meta,
   .events-page .event-content,
   .events-page .event-item h3,
-  .events-page .event-item p {
+  .events-page .event-item p,
+  .outputs-index .output-year,
+  .outputs-index .output-content,
+  .interior-page.outputs-index .output-year,
+  .interior-page.outputs-index .output-content {
     grid-column: 1;
   }
 
-  .events-page .event-item .event-meta {
+  .events-page .event-item .event-meta,
+  .outputs-index .output-year,
+  .interior-page.outputs-index .output-year {
     grid-row: auto;
     margin-bottom: 0.45rem;
     max-width: none;
