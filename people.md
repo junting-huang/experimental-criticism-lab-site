@@ -31,9 +31,23 @@ page_class: people-page
   </article>
 </div>
 
+## Collaborators
+
+<div class="people-list">
+  <article class="person-entry">
+    <h3>Francesco Agnellini</h3>
+    <p class="person-position">Lecturer in Digital and Data Studies, Binghamton University (SUNY).</p>
+  </article>
+</div>
+
 ## Affiliates
 
 <div class="people-list">
+  <article class="person-entry">
+    <h3>Xuenan Cao</h3>
+    <p class="person-position">Professor and Chair of General Education, San Francisco Bay University.</p>
+  </article>
+
   <article class="person-entry">
     <h3>Edwin “Teddy” Roland</h3>
     <p class="person-position">Postdoctoral Research Associate, School of Information Sciences, University of Illinois Urbana-Champaign.</p>

@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-The Experimental Criticism Lab is based in Comparative Literature at Binghamton University. It supports collaborative, project-based inquiry into how media reshape the practices of reading, interpretation, translation, and criticism.
+The Experimental Criticism Lab is based in Comparative Literature at Binghamton University, with support from the Digital and Data Studies (DiDa) program. It supports collaborative, project-based inquiry into how media reshape the practices of reading, interpretation, translation, and criticism.
 
 ## Mission
 
