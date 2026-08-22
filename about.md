@@ -20,7 +20,7 @@ A lab structure makes this possible. It brings together faculty, graduate studen
 
 ## Sister Lab
 
-The Experimental Criticism Lab is a sister lab of the [Narrative Intelligence Lab](https://nil.columbia.edu/?utm_source=chatgpt.com) at Columbia University. The two labs share an interest in collaborative humanities research and in the relationships among literature, media, computation, and collective knowledge. This relationship creates opportunities for intellectual exchange, joint programming, and future research collaboration.
+The Experimental Criticism Lab is a sister lab of the Narrative Intelligence Lab at Columbia University. The two labs share an interest in collaborative humanities research and in the relationships among literature, media, computation, and collective knowledge. This relationship creates opportunities for intellectual exchange, joint programming, and future research collaboration.
 
 ## Join Us
 
