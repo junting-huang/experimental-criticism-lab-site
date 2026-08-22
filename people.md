@@ -58,6 +58,16 @@ page_class: people-page
 
 <div class="people-list">
   <article class="person-entry">
+    <h3>Laurent Dubreuil</h3>
+    <p class="person-position">Distinguished Professor of Arts and Sciences and Professor of French, Francophone &amp; Comparative Literature, Cornell University; Founding Director, Humanities Lab.</p>
+  </article>
+
+  <article class="person-entry">
+    <h3>Tom McEnaney</h3>
+    <p class="person-position">Associate Professor of Comparative Literature and Spanish &amp; Portuguese, University of California, Berkeley; craigslist Distinguished Chair in New Media.</p>
+  </article>
+
+  <article class="person-entry">
     <h3>Dennis Tenen</h3>
     <p class="person-position">Associate Professor of English and Comparative Literature, Columbia University; Director of the Narrative Intelligence Lab.</p>
   </article>
