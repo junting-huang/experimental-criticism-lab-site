@@ -11,7 +11,6 @@ page_class: people-page
   <article class="person-entry">
     <h3>Junting Huang</h3>
     <p class="person-position">Assistant Professor of Comparative Literature, Binghamton University (SUNY); Director of the Experimental Criticism Lab</p>
-    <p class="person-role">Research areas: media theory, AI &amp; criticism, sound studies.</p>
   </article>
 </div>
 
@@ -21,13 +20,11 @@ page_class: people-page
   <article class="person-entry">
     <h3>Adam Hartman-Whitfield</h3>
     <p class="person-position">Graduate Student in Comparative Literature, Binghamton University (SUNY).</p>
-    <p class="person-role">Project interest: analog-digital media archaeology.</p>
   </article>
 
   <article class="person-entry">
     <h3>Latifa Alharthi</h3>
     <p class="person-position">Graduate Student in the Translation Research and Instruction Program (TRIP), Binghamton University (SUNY).</p>
-    <p class="person-role">Project interest: AI translation and premodern literary contexts.</p>
   </article>
 </div>
 
@@ -65,6 +62,11 @@ page_class: people-page
   <article class="person-entry">
     <h3>Tom McEnaney</h3>
     <p class="person-position">Associate Professor of Comparative Literature and Spanish &amp; Portuguese, University of California, Berkeley; craigslist Distinguished Chair in New Media.</p>
+  </article>
+
+  <article class="person-entry">
+    <h3>Rita Raley</h3>
+    <p class="person-position">Professor of English, University of California, Santa Barbara.</p>
   </article>
 
   <article class="person-entry">
